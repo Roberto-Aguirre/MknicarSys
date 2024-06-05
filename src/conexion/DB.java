@@ -17,18 +17,6 @@ public class DB {
         this.contraseña = contraseña;
     }
 
-    public String getIp() {
-        return ip;
-    }
-
-    public String getPuerto() {
-        return puerto;
-    }
-
-    public String getBaseDatos() {
-        return baseDatos;
-    }
-
     public String getUsuario() {
         return usuario;
     }
@@ -38,6 +26,6 @@ public class DB {
     }
 
     public String construirCadena() {
-        return this.ip + ":" + this.puerto + "/"+this.baseDatos+"?autoReconnect=true&useSSL=false";
+        return this.ip + ":" + this.puerto + "/" + this.baseDatos + "?autoReconnect=true&useSSL=false";
     }
 }
